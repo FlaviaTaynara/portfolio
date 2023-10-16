@@ -30,3 +30,4 @@ venv
 
 # .env files
 .env
+.vercel
