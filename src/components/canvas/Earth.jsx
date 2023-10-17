@@ -4,7 +4,7 @@ import earth from "/planet/earth.png";
 const EarthCanvas = () => {
   const [zoomLevel, setZoomLevel] = useState(1);
   const minZoom = 0.4;
-  const maxZoom = 1.4;
+  const maxZoom = 1.3;
   const handleMouseScroll = (e) => {
     e.preventDefault();
 
