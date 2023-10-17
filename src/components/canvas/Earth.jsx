@@ -3,14 +3,15 @@ import earth from "/planet/earth.png";
 
 const EarthCanvas = () => {
   const [zoomLevel, setZoomLevel] = useState(1);
-
+  const minZoom = 0.4;
+  const maxZoom = 1.4;
   const handleMouseScroll = (e) => {
     e.preventDefault();
 
     if (e.deltaY > 0) {
-      setZoomLevel((prevZoom) => prevZoom - 0.1);
+      setZoomLevel((prevZoom) => Math.max(minZoom, prevZoom - 0.1));
     } else {
-      setZoomLevel((prevZoom) => prevZoom + 0.1);
+      setZoomLevel((prevZoom) => Math.min(maxZoom, prevZoom + 0.1));
     }
   };
 
