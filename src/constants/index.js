@@ -169,7 +169,7 @@ const experiences = [
     company_name: "Insly",
     icon: insly,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Jul 2021 - Present",
     points: [
       "I am responsible for testing product functionality and identifying bugs throughout the Software Development Life Cycle (SDLC) using the agile methodology.",
       "Additionally, I excel at creating and maintaining automated tests using tools such as Cypress, Postman Newman, K6, Selenium, and more.",

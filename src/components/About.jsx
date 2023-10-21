@@ -55,7 +55,7 @@ const About = () => {
         ensuring that I approach software development with a blend of innovation
         and efficiency. As I navigate this new path in software development, I'm
         enthusiastic about collaborating on projects that challenge and inspire.
-        Together, let's shape the future of technology
+        Together, let's shape the future of technology.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
