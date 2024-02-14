@@ -48,13 +48,13 @@ const About = () => {
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
         With over 6 years of experience in automation, I've embraced a new
-        challenge, delving deep into software development. I have gained deep
-        knowledge in TypeScript, JavaScript, Python, and Java, and have
-        cultivated expertise with frameworks like React, Node.js, Next.js,
+        challenge by delving deep into software development. I have gained
+        extensive knowledge in TypeScript, JavaScript, Python, and Java, and
+        have cultivated expertise with frameworks like React, Node.js, Next.js,
         Remix, and Three.js. My rich background in automation equips me with a
         unique perspective, ensuring that I approach software development with a
         blend of innovation and efficiency. As I navigate this new path in
-        software development, I'm enthusiastic about collaborating on projects
+        software development, I am enthusiastic about collaborating on projects
         that challenge and inspire. Together, let's shape the future of
         technology.
       </motion.p>
