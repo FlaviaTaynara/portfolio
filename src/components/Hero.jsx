@@ -12,14 +12,12 @@ const Hero = () => {
         <div className="flex flex-col justify-center items-center mt-5"></div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>Welcome.</h1>
+          <h1 className={`${styles.heroHeadText} text-white`}>Greetings!</h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            Hi, my name is <span className="text-[#915EFF]">Flávia</span>, and I
-            have recently <br className="sm:block hidden" />
-            completed Full Stack course. <br className="sm:block hidden" />
-            Currently pursuing an <br className="sm:block hidden" />
-            MBA in Data Science and Analytics.{" "}
-            <br className="sm:block hidden" />
+            <span className="text-[#915EFF]">Flávia</span> here. I successfully
+            <br className="sm:block hidden" /> completed a Full Stack course and
+            <br className="sm:block hidden" /> I'm currently pursuing an MBA in
+            Data Science.{" "}
           </p>
         </div>
       </div>

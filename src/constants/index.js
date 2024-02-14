@@ -221,7 +221,7 @@ const testimonials = [
     designation: "Manager, AML Compliance",
     company: "Western Union Business Solutions",
     image:
-      "https://media.licdn.com/dms/image/C4E03AQG7ZrtfiO3QYA/profile-displayphoto-shrink_200_200/0/1654785422189?e=1700697600&v=beta&t=TNScf-WKzmVzykEwQKFM_0-HdLr5ewKdluqf24e8Mi0",
+      "https://media.licdn.com/dms/image/C4E03AQG7ZrtfiO3QYA/profile-displayphoto-shrink_400_400/0/1654785422721?e=1713398400&v=beta&t=rs2CwhVK6EzwpiRUum_Z9YxNtrK88x9wBbATzuC40p4",
   },
   {
     testimonial:
@@ -230,7 +230,7 @@ const testimonials = [
     designation: "Team Leader",
     company: "Western Union",
     image:
-      "https://media.licdn.com/dms/image/C4D03AQHEt4jWg3E5KQ/profile-displayphoto-shrink_200_200/0/1599897621407?e=1700697600&v=beta&t=1mbuS10ezcN7-J5EoXqOnOSZo3nCiwDcM7FBWfnonnU",
+      "https://media.licdn.com/dms/image/C4D03AQHEt4jWg3E5KQ/profile-displayphoto-shrink_400_400/0/1599897623574?e=1713398400&v=beta&t=gm7ReLdk3z20kiabUX_CzspR16EK9PN0AAFthNkSnGQ",
   },
   {
     testimonial:
@@ -239,7 +239,7 @@ const testimonials = [
     designation: "Chief Executive Officer",
     company: "Alan Harper Composites Brasil",
     image:
-      "https://media.licdn.com/dms/image/D5603AQF8jFPLstGXCw/profile-displayphoto-shrink_200_200/0/1682689668661?e=1700697600&v=beta&t=i2aU8ukkHBGP2mwFAfeQgF9XGvDp_64atITcNyKgEaA",
+      "https://media.licdn.com/dms/image/D5603AQF8jFPLstGXCw/profile-displayphoto-shrink_400_400/0/1682689672260?e=1713398400&v=beta&t=FtUyYA1qzd7EMHunZ5FW91RIdnPko6qilU1xLtIv4vE",
   },
 ];
 
