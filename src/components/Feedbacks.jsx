@@ -15,6 +15,9 @@ const FeedbackCard = ({
   image,
 }) => (
   <motion.div
+    initial="hidden"
+    whileInView="show"
+    viewport={{ once: true, amount: 0.25 }}
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
     className="bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full"
   >
@@ -28,7 +31,7 @@ const FeedbackCard = ({
           <p className="text-white font-medium text-[16px]">
             <span className="blue-text-gradient">@</span> {name}
           </p>
-          <p className="mt-1 text-secondary text-[12px]">
+          <p className="mt-1 text-white text-[12px] sm:text-[13px] leading-[16px]">
             {designation} of {company}
           </p>
         </div>
@@ -49,9 +52,15 @@ const Feedbacks = () => {
       <div
         className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}
       >
-        <motion.div variants={textVariant()}>
-          {/* <p className={styles.sectionSubText}>What others say</p> */}
-          <h4 className={styles.sectionHeadText}>Testimonials</h4>
+        <motion.div
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.25 }}
+          variants={textVariant()}
+        >
+          <h4 className="text-white font-black text-[28px] xs:text-[32px] sm:text-[40px] leading-snug text-left">
+            Testimonials
+          </h4>
         </motion.div>
       </div>
       <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7`}>
