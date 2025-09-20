@@ -19,7 +19,7 @@ const FeedbackCard = ({
     whileInView="show"
     viewport={{ once: true, amount: 0.25 }}
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
-    className="bg-black-200 p-4 sm:p-6 md:p-10 rounded-3xl w-full max-w-[320px]"
+    className="bg-black-200 p-5 sm:p-10 rounded-3xl w-full max-w-[320px] overflow-visible"
   >
     <p className="text-white font-black text-[48px]">"</p>
 
@@ -58,7 +58,7 @@ const Feedbacks = () => {
           viewport={{ once: true, amount: 0.25 }}
           variants={textVariant()}
         >
-          <h4 className="text-white font-black text-[22px] sm:text-[28px] md:text-[32px] leading-snug text-left">
+          <h4 className="text-white font-black text-[20px] sm:text-[24px] md:text-[30px] leading-tight text-left">
             Testimonials
           </h4>
         </motion.div>
