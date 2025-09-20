@@ -7,7 +7,7 @@ import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ServiceCard = ({ index, title, icon }) => (
+const ServiceCard = ({ index, title, icon, description }) => (
   <Tilt className="xs:w-[250px] w-full">
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
@@ -30,6 +30,10 @@ const ServiceCard = ({ index, title, icon }) => (
         <h3 className="text-white text-[20px] font-bold text-center">
           {title}
         </h3>
+        
+        <h6 className="text-secondary text-[12px] font-normal text-center mt-2">
+          {description}
+        </h6> 
       </div>
     </motion.div>
   </Tilt>
@@ -39,24 +43,19 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        {/* <p className={styles.sectionSubText}>Introduction</p> */}
+        <h4 className={styles.sectionHeadText}>About</h4>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        With over 6 years of experience in automation, I've embraced a new
-        challenge by delving deep into software development. I have gained
-        extensive knowledge in TypeScript, JavaScript, Python, and Java, and
-        have cultivated expertise with frameworks like React, Node.js, Next.js,
-        Remix, and Three.js. My rich background in automation equips me with a
-        unique perspective, ensuring that I approach software development with a
-        blend of innovation and efficiency. As I navigate this new path in
-        software development, I am enthusiastic about collaborating on projects
-        that challenge and inspire. Together, let's shape the future of
-        technology.
+        Full-Stack Developer with over 4 years of experience delivering robust web applications and backend systems using Java,
+        Python, JavaScript, and React. Skilled in designing maintainable architectures and building APIs that ensure smooth
+        cross-system functionality. Actively contributed to CI/CD workflows that enhanced deployment processes and system
+        reliability. Holds a Master’s in Data Science and a Full Stack Development diploma, combining analytical depth with
+        hands-on software engineering expertise.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

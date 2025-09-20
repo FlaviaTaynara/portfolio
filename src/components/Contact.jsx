@@ -59,8 +59,8 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
+        {/* <p className={styles.sectionSubText}>Get in touch</p> */}
+        <h4 className={styles.sectionHeadText}>Get in touch</h4>
 
         <form
           ref={formRef}
@@ -72,7 +72,7 @@ const Contact = () => {
             <input
               type="text"
               {...register("name")}
-              placeholder="What's your good name?"
+              placeholder="What's your name?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
             <p className="text-red-500">{errors.name?.message}</p>
@@ -83,7 +83,7 @@ const Contact = () => {
             <input
               type="email"
               {...register("email")}
-              placeholder="What's your web address?"
+              placeholder="What's your email address?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
             <p className="text-red-500">{errors.email?.message}</p>
@@ -94,7 +94,7 @@ const Contact = () => {
             <textarea
               rows={7}
               {...register("message")}
-              placeholder="What you want to say?"
+              placeholder="What do you want to say?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
             <p className="text-red-500">{errors.message?.message}</p>

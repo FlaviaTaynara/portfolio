@@ -44,6 +44,14 @@ export const navLinks = [
     title: "Work",
   },
   {
+    id: "projects",
+    title: "Projects",
+  },
+  {
+    id: "testimonials",
+    title: "Testimonials",
+  },
+  {
     id: "contact",
     title: "Contact",
   },
@@ -51,20 +59,24 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
-    icon: web,
-  },
-  {
     title: "Backend Developer",
     icon: backend,
+    description: "Designing and maintaining server-side logic, databases, and APIs.", 
   },
   {
-    title: "RPA developer",
+    title: "Frontend Developer",
     icon: creator,
+    description: "Building the user interface and user experience.",
   },
   {
-    title: "QA Automation Engineer",
+    title: "Infrastructure & Tooling",
     icon: mobile,
+    description: "Improving developer workflows, CI/CD, and test infrastructure.",
+  },
+  {
+    title: "Analytical Thinker",
+    icon: web,
+    description: "Combining logic and curiosity to solve complex problems with data-driven solutions.",
   },
 ];
 
@@ -165,14 +177,17 @@ const technologies = [
 
 const experiences = [
   {
-    title: "QA Automation Engineer",
+    title: "Senior Software Engineer – Infrastructure & Tooling (Full Stack)",
     company_name: "Insly",
     icon: insly,
     iconBg: "#383E56",
     date: "Jul 2021 - Present",
     points: [
-      "I am responsible for testing product functionality and identifying bugs throughout the Software Development Life Cycle (SDLC) using the agile methodology.",
-      "Additionally, I excel at creating and maintaining automated tests using tools such as Cypress, Postman Newman, K6, Selenium, and more.",
+      "Helped implement a reusable full-stack platform using Java and Playwright to validate complex API and UI workflows, improving regression coverage and increasing release confidence across teams.",
+      "Modernized legacy systems by refactoring JavaScript/Cypress tooling into standardized Python and Java frameworks, cutting test maintenance effort and enabling smoother CI/CD adoption.",
+      "Built backend utilities and CLI tools to automate deployment checks, accelerate developer workflows, and streamline debugging across services, reducing triage time by up to 40%.",
+      "Partnered with backend and frontend engineers to resolve integration issues, optimize APIs, and boost system performance, resulting in faster load times and fewer production incidents.",
+      "Stepped in as acting team lead—mentoring engineers and conducting code reviews to promote clean, scalable code and uphold best practices, contributing to a 25% drop in post-deploy bugs.",
     ],
   },
   {
@@ -182,9 +197,9 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Mar 2021 - Aug 2021",
     points: [
-      "Collaborated with fellow developers to write and test Python code, debug programs, and integrate applications with third-party web services",
-      "Provided support for Data Science and Machine Learning.",
-      "Demonstrated proficiency and experience in working with the Django Framework, Docker, PostgreSQL, and the MVC (Model-View-Controller) architecture.",
+      "Structured backend applications using Python, Django, and Docker, integrating third-party services to boost performance and support scalable deployments across environments.",
+      "Debugged and refined code throughout the development lifecycle, delivering robust, well-documented APIs that integrated seamlessly with frontend components and third-party platforms.",
+      "Collaborated with Data Science and Machine Learning teams to integrate data-driven features, enhancing product functionality and supporting smarter user workflows.",
     ],
   },
   {
@@ -206,9 +221,10 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Mar 2019 - Feb 2021",
     points: [
-      "Developed Excel VBA Macros for automated due diligence, aggregating financial transaction data to export financial grids.",
-      "Engineered an automation tool that analyzed data to distribute workloads based on business criteria and staff expertise, leading to a substantial improvement in production output.",
-      "Played a pivotal role in a team that developed a tool for analyzing client behavior data, offering invaluable insights for the Financial Intelligence Investigation.",
+      "Engineered backend automation tools using VBA, VB, and JavaScript — including an AML/TF screening system that automated repetitive checks and doubled analyst processing capacity.",
+      "Developed data-driven platforms to analyze client behavior and optimize workload distribution, directly supporting complex financial intelligence investigations.",
+      "Managed the full software lifecycle for internal tools, overseeing design, implementation, deployment, and iterative improvements to ensure reliability and long-term maintainability.",
+      "Mentored teammates and led the rollout of scalable solutions that improved delivery speed, reduced manual errors, and raised overall code quality across the team.",
     ],
   },
 ];
@@ -216,12 +232,21 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
+      "Flavia is truly exceptional. As her manager at Insly, I saw her take on every challenge with energy and resourcefulness. She doesn’t just handle what’s in front of her — she anticipates needs, finds smart solutions, and follows through every time. Flavia brings strong technical skills to the table, including solid knowledge of Python and other tools, which made her a valuable contributor in tackling complex projects. She’s always ready to support her teammates and brings a positive, can-do attitude that makes her a joy to work with. Her knack for simplifying complex issues and finding practical approaches had a real impact on our team's performance :) Any team would be lucky to have her on board!",
+    name: "Oleksii Lipov",
+    designation: "Lead QA Engineer",
+    company: "Insly",
+    image:
+    "https://media.licdn.com/dms/image/v2/C4E03AQF1dQDadppzuQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1622922944271?e=1761177600&v=beta&t=m1hVj0fpPSVy0gOMEbbr-rWVF4x7ubsZnVj_bhVKifU",
+  },
+  {
+    testimonial:
       "I have a pleasure working with Flavia for almost two years now. Flavia started as a specialist working in AML/TF field, however currently Flavia is focusing on increasing her VBA skills. Flavia is honing her skills for Python and SQL. She is a self-starter and every task Flavia starts working on always exceeds expectations. Flavia is highly valued member of the team as she manages to perform her daily tasks as well as spend time on improving/creating various tools team uses.' success like Rick does.",
     name: "Andrius Kirijakas",
     designation: "Manager, AML Compliance",
     company: "Western Union Business Solutions",
     image:
-      "https://media.licdn.com/dms/image/C4E03AQG7ZrtfiO3QYA/profile-displayphoto-shrink_400_400/0/1654785422721?e=1713398400&v=beta&t=rs2CwhVK6EzwpiRUum_Z9YxNtrK88x9wBbATzuC40p4",
+     "https://media.licdn.com/dms/image/v2/C4E03AQG7ZrtfiO3QYA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1654785422721?e=2147483647&v=beta&t=Th7REE3VNLPt8rcQek0aK6Xv4xcECzydQjiCc3qYGws",
   },
   {
     testimonial:
@@ -230,16 +255,7 @@ const testimonials = [
     designation: "Team Leader",
     company: "Western Union",
     image:
-      "https://media.licdn.com/dms/image/C4D03AQHEt4jWg3E5KQ/profile-displayphoto-shrink_400_400/0/1599897623574?e=1713398400&v=beta&t=gm7ReLdk3z20kiabUX_CzspR16EK9PN0AAFthNkSnGQ",
-  },
-  {
-    testimonial:
-      "Flavia is a skilled professional that can focus on high complex projects. She has worked with us translating technical documents and manuals, presenting great skill, team work and adaptability. She can deliver great work even remotely being capable of keep with workflow demand in the most different scenarios. Definitely recommended.",
-    name: "André Antunes",
-    designation: "Chief Executive Officer",
-    company: "Alan Harper Composites Brasil",
-    image:
-      "https://media.licdn.com/dms/image/D5603AQF8jFPLstGXCw/profile-displayphoto-shrink_400_400/0/1682689672260?e=1713398400&v=beta&t=FtUyYA1qzd7EMHunZ5FW91RIdnPko6qilU1xLtIv4vE",
+      "https://media.licdn.com/dms/image/v2/C4D03AQHEt4jWg3E5KQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1599897623574?e=2147483647&v=beta&t=o9LDTuohWw_gWbrTHeiV1WkvXP9n5pqvQItnFRQWPg0",
   },
 ];
 
